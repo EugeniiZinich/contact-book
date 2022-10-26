@@ -1,0 +1,107 @@
+body {
+  background: linear-gradient(to left, #7f7fd5, #86a8e7, #91eae4);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  position: relative;
+  width: 800px;
+  outline: 1px solid red;
+  height: 100px;
+  margin: auto;
+  padding: 0 15 0;
+  background-color: transparent;
+  box-shadow: 1px 4px 43px -4px rgba(0, 0, 0, 0.83);
+  border-radius: 20px;
+}
+
+.contact-bar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50, -50%);
+}
+
+.contact-bar__add-btn {
+  border-radius: 20px;
+  border: none;
+  width: 150px;
+  height: 30px;
+}
+
+// USER CONTACT
+
+.user-contact {
+  max-width: 1200px;
+  outline: 1px solid red;
+  height: 100vh;
+  margin: 20px auto;
+}
+
+.user-contact__card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.user-contact__item {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.user-contact__img {
+  display: block;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.user-contact__delete-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.user-contact__delete-btn:before,
+.user-contact__delete-btn:after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 4px;
+  background: red;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+.user-contact__delete-btn:before {
+  transform: rotate(45deg);
+}
+.user-contact__delete-btn:after {
+  transform: rotate(-45deg);
+}
+
+.user-contact__delete-btn:hover::after {
+  transform: rotate(130deg);
+}
+.user-contact__delete-btn:hover::before {
+  transform: rotate(220deg);
+}
+
+// .user-contact__delete-btn:before:hover,
+// .user-contact__delete-btn:after:hover,
+// .user-contact__delete-btn:before:focus,
+// .user-contact__delete-btn:after:focus {
+//   transform: rotate(180deg);
+//   background-color: green;
+// }

@@ -1,0 +1,18 @@
+p {
+  margin-bottom: 2px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form__submit {
+  //   display: inline-block;
+  width: 80px;
+}
+
+.contact-form__email > input {
+  margin-bottom: 10px;
+}
