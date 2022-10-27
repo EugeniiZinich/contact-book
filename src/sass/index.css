@@ -64,11 +64,19 @@ li {
   height: 30px;
 }
 
-.user-contact {
+.inner {
   max-width: 1200px;
   outline: 1px solid red;
   height: 100vh;
   margin: 20px auto;
+}
+
+.user-contact__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  flex-basis: calc((100% - 20px) / 1);
 }
 
 .user-contact__card {
@@ -77,6 +85,7 @@ li {
   height: 300px;
   background-color: #fff;
   border-radius: 15px;
+  margin: 0;
 }
 
 .user-contact__item {
@@ -125,6 +134,20 @@ li {
 
 .user-contact__delete-btn:hover::before {
   transform: rotate(220deg);
+}
+
+.spinner-grow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 p {

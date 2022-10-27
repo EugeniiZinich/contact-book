@@ -1,4 +1,5 @@
 <div
+  id="myModal"
   class="modal fade"
   id="exampleModal"
   tabindex="-1"
@@ -17,7 +18,11 @@
         ></button>
       </div>
       <div class="modal-body">
-        <form class="contact-form">
+        <form class="update-form">
+          <p>ID</p>
+          <label class="contact-form__username">
+            <input type="text" name="id" />
+          </label>
           <p>Username</p>
           <label class="contact-form__username">
             <input type="text" name="name" />
@@ -30,7 +35,7 @@
           <label class="contact-form__email">
             <input type="email" name="email" />
           </label>
-          <button class="contact-form__submit" type="submit">Submit</button>
+          <button class="contact-form__submit" type="submit">Update</button>
         </form>
       </div>
       <div class="modal-footer">

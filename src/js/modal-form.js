@@ -3,4 +3,4 @@ import { refs } from './refs';
 
 export const modalForm = new BSN.Modal(refs.modal);
 
-// modalInitJS.show();
+export const modalUpdateForm = new BSN.Modal(refs.updateModal);
