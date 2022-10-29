@@ -5,6 +5,7 @@ import UserContacts from './js/fetch-contacts';
 import Spinner from './js/spinner';
 import { createMarkup } from './js/markup-contacts';
 import { resetContactsMarkup } from './js/markup-contacts';
+import { main } from './js/pagination';
 
 const userContacts = new UserContacts();
 
@@ -12,7 +13,7 @@ const spinner = new Spinner({ selector: '[data-action="load-spinner"]' });
 
 spinner.enable();
 
-onGetContacts();
+// onGetContacts();
 
 refs.newContactBtn.addEventListener('click', onContactOpenModal);
 
@@ -87,7 +88,8 @@ async function onUpdateContact(e) {
   try {
     const data = await userContacts.fetchContact();
     resetContactsMarkup();
-    createMarkup(data.reverse());
+    // createMarkup(data.reverse());
+    createMarkup(data);
     spinner.enable();
   } catch (error) {
     console.log(error);

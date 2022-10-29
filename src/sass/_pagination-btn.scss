@@ -1,0 +1,15 @@
+.wrapper ul {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.number-page {
+  cursor: pointer;
+}
+
+.active {
+  color: red;
+}

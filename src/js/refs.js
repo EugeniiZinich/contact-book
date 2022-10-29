@@ -9,4 +9,5 @@ export const refs = {
   updateForm: document.querySelector('.update-form'),
   markupContacts: document.querySelector('.user-contact__list'),
   spinner: document.querySelector('.visually-hidden'),
+  divElPagination: document.querySelector('.wrapper'),
 };
