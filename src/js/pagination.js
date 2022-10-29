@@ -10,7 +10,7 @@ const userContacts = new UserContacts();
 export async function main() {
   const data = await userContacts.fetchContact();
   let currentPage = 1;
-  let rows = 5; // сколько выводить контактов
+  let rows = 2; // сколько выводить контактов
 
   function displayList(contactData, rowPerPage, page) {
     currentPage -= 1;
